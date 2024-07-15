@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div id="header">
+        <p><u>Library</u></p>
+        <dialog id="dialog">
+            <form method="dialog" id="bookForm">
+              <p>
+                <label>
+                  Title: &nbsp;&nbsp;&nbsp;
+                  <input type="text" name="title" required />
+                </label>
+              </p>
+
+              <p>
+                <label>
+                  Author:
+                  <input type="text" name="author" required />
+                </label>
+              </p>
+
+              <p>
+                <label>
+                  Pages: &nbsp;
+                  <input type="text" name="pages" required />
+                </label>
+              </p>
+
+              <p>
+                <label>
+                  Read: &nbsp;&nbsp;
+                  <input type="checkbox" name="read" />
+                </label>
+              </p>
+
+              <div>
+                <input type="submit" id="normal-close" value="Submit" />
+                <input type="submit" id="js-close" value="Cancel" />
+              </div>
+            </form>
+          </dialog>
+          <p>
+            <button id="show-dialog">New Book</button>
+          </p>
+          <output></output>
+    </div>
+    <div id="cardWrapper">
+    </div>
+</body>
+</html>
